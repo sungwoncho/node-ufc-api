@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var nock = require('nock');
 
-var api = require('../lib/v1/api');
+var api = require('../dist/v1/api');
 
 describe("v1 api", function() {
   describe("health", function() {
