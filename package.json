@@ -1,0 +1,28 @@
+{
+  "name": "node-ufc-api",
+  "version": "0.1.0",
+  "description": "A node.js wrapper for UFC API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sungwoncho/node-ufc-api.git"
+  },
+  "keywords": [
+    "ufc",
+    "api",
+    "wrapper"
+  ],
+  "author": "Sung Won Cho <mikeswcho@gmail.com> (https://sungwoncho.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sungwoncho/node-ufc-api/issues"
+  },
+  "homepage": "https://github.com/sungwoncho/node-ufc-api#readme",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "request": "^2.67.0"
+  }
+}
