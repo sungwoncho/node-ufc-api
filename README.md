@@ -4,7 +4,7 @@ A node.js wrapper for the official API of the Ultimate Fighting Championship.
 
 ## Install
 
-    npm install node-ufc-api --save
+    npm install ufc-api --save
 
 ## Usage
 
