@@ -1,4 +1,4 @@
-# node-ufc-api
+# node-ufc-api [![Build Status](https://travis-ci.org/sungwoncho/node-ufc-api.svg?branch=master)](https://travis-ci.org/sungwoncho/node-ufc-api)
 
 A node.js wrapper for the official API of the Ultimate Fighting Championship.
 
