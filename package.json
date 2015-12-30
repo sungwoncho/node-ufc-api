@@ -2,9 +2,11 @@
   "name": "ufc-api",
   "version": "0.1.0",
   "description": "node.js wrapper for UFC API",
-  "main": "lib/client.js",
+  "main": "dist/client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "./node_modules/.bin/babel lib/ -d dist/",
+    "prepublish": "npm run-script compile"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,10 @@
   "dependencies": {
     "lodash": "^3.10.1",
     "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13"
   }
 }

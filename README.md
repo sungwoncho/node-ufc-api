@@ -54,6 +54,12 @@ http://ufc-data-api.ufc.com/api/v1/us/ for all endpoints.
 ### event(id, callback)
 ### alerts(callback)
 
+## Contributing
+
+* This module uses babel to compile ES2015 code in `/lib` to `/dist`. You don't
+need to worry about compiling because the compilation is run as a hook before
+we publish the new version. Simply write code in `/lib` using ES2015.
+
 ## License
 
 MIT
