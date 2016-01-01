@@ -56,9 +56,11 @@ http://ufc-data-api.ufc.com/api/v1/us/ for all endpoints.
 
 ## Contributing
 
-* This module uses babel to compile ES2015 code in `/lib` to `/dist`. You don't
-need to worry about compiling because the compilation is run as a hook before
-we publish the new version. Simply write code in `/lib` using ES2015.
+* This module uses babel to compile ES2015 code in `/lib` to `/dist`. Simply
+write code using ES2015 in `/lib`.
+* The test is run against the compiled code in `/dist`. To run test, first run
+`npm run-script compile`. And run `npm test`.
+* Compilation is run automatically as a hook before publishing to npm.
 
 ## License
 
