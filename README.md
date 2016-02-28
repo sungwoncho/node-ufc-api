@@ -11,7 +11,9 @@ A node.js wrapper for the official API of the Ultimate Fighting Championship.
 ```js
 var UfcAPI = require('ufc-api');
 
-var ufc = new UfcAPI();
+var ufc = new UfcAPI({
+  version: 'v3'
+});
 
 ufc.titleHolders(function(err, res) {
   console.log(res.body);
@@ -35,24 +37,81 @@ ufc.titleHolders(function(err, res) {
 });
 ```
 
+## Choosing API version
+
+When instantiating an API client, you can specify the API version by passing
+an option. The version defaults to `v3`.
+
+```
+var UfcAPI = require('ufc-api');
+
+var ufc = new UfcAPI({
+  version: 'v3'
+});
+```
+
 ## API methods
 
-Currently, this module supports `general_use (v1)` API. See
-http://ufc-data-api.ufc.com/api/v1/us/ for all endpoints.
+The module supports `v1` and `v3` API.
+
+To see all the endpoints:
+
+* http://ufc-data-api.ufc.com/api/v1/us/
+* http://ufc-data-api.ufc.com/api/v3/us/
 
 *All callbacks take `error` as the first argument, and `result` as the second.*
 
-### health(callback)
-### news(callback)
-### article(id, callback)
-### media(callback)
-### mediaItem(id, callback)
-### titleHolders(callback)
-### fighters(callback)
-### fighter(id, callback)
-### events(callback)
-### event(id, callback)
-### alerts(callback)
+### v1
+
+#### health(callback)
+#### news(callback)
+#### article(id, callback)
+#### media(callback)
+#### mediaItem(id, callback)
+#### titleHolders(callback)
+#### fighters(callback)
+#### fighter(id, callback)
+#### events(callback)
+#### event(id, callback)
+#### alerts(callback)
+
+
+### v3
+
+#### health (callback)
+#### translations (id, callback)
+#### streamingVideo (callback)
+#### liveContent (callback)
+#### chat (callback)
+#### instructions (callback)
+#### news (callback)
+#### article (id, callback)
+#### media (callback)
+#### mediaItem (id, callback)
+#### titleHolders (callback)
+#### fighters (callback)
+#### fighter (id, callback)
+#### fighterStatsFilterKeyValues (callback)
+#### fighterStatsByWeightClass (id, callback)
+#### fighterStatsByBirthCountry (id, callback)
+#### fighterNews (id, callback)
+#### fighterMedia (id, callback)
+#### octagonGirls (callback)
+#### octagonGirl (id, callback)
+#### events (callback)
+#### event (id, callback)
+#### eventFights (id, callback)
+#### eventMedia (id, callback)
+#### eventHighlights (id, callback)
+#### fightVotes (id, callback)
+#### fightGetVote (fightId, roundNum, fighterStatId, clientId, callback)
+#### fightPostVote (id, callback)
+#### roundScoring (id, callback)
+#### discussEvent (id, callback)
+#### eventTickets (id, callback)
+#### watchEvent (id, callback)
+#### alerts (callback)
+
 
 ## Contributing
 
