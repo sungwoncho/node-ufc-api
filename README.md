@@ -50,6 +50,11 @@ var ufc = new UfcAPI({
 });
 ```
 
+## Upgrading to 0.2.0
+
+The default API version has been changed from `v1` to `v3`. There should not
+be any breaking changes, and no action is required.
+
 ## API methods
 
 The module supports `v1` and `v3` API.
