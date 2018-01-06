@@ -171,7 +171,7 @@ describe("v3 api", function() {
       var fighterId = 1;
 
       nock('http://ufc-data-api.ufc.com/api/v3/us')
-        .get('/fighters/' + fighterId)
+        .get('/fighters/' + fighterId + '.json')
         .reply(200);
 
       api.fighter(fighterId, function (err, res) {
@@ -300,11 +300,11 @@ describe("v3 api", function() {
       var eventId = 1;
 
       nock('http://ufc-data-api.ufc.com/api/v3/us')
-        .get('/events/' + eventId)
+        .get('/events/' + eventId + '.json')
         .reply(200);
-
+		
       api.event(eventId, function (err, res) {
-        expect(res.statusCode).to.equal(200);
+		expect(res.statusCode).to.equal(200);
         done();
       });
     });
