@@ -171,7 +171,7 @@ describe("v3 api", function() {
       var fighterId = 1;
 
       nock('http://ufc-data-api.ufc.com/api/v3/us')
-        .get('/fighters/' + fighterId)
+        .get('/fighters/' + fighterId + '.json')
         .reply(200);
 
       api.fighter(fighterId, function (err, res) {
